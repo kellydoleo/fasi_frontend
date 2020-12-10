@@ -41,6 +41,14 @@ const Form = (props) => {
         value={formData.image_url}
         onChange={handleChange}
       />
+      Description:
+      <input
+        
+        type="text"
+        name="description"
+        value={formData.description}
+        onChange={handleChange}
+      />
 Work Url:
     <input
        

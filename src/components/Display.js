@@ -12,9 +12,9 @@ const Display = (props) => {
         {talents.map((talent)=>(
           
             <div>
-             <Link to="" ><img src = {`${talent.work_image_url}`}/></Link> 
+             <Link to={`/display/${talent.id}`}  ><img src = {`${talent.work_image_url}`}/></Link> 
               
-              <Link  ><h1>{talent.name}</h1></Link>
+              <Link to={`/display/${talent.id}`}  ><h1>{talent.name}</h1></Link>
               <h2>{talent.email}</h2>
               <p>{talent.description}</p>
               <button onClick={()=>{

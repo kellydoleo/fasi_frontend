@@ -11,6 +11,8 @@ const {talents} = props
                 <>
             <img src = {`${talent.image_url}`}  />
             <h2>{talent.name}</h2>
+            <p>{talent.description}</p>
+            <button onClick={talent.work_url} >See my Work</button>
             </> 
             ))}
            

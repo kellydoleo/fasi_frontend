@@ -66,11 +66,7 @@ const deleteTalent = (talent) => {
   }).then((response) => getTalent())
 }
 
-const showTalent = (talent) => {
-  fetch("https://fasi-backend.herokuapp.com/talents" + talent._id, {
 
-  }).then((response) => getTalent())
-}
 
 const handleCreate = (newTalent) => {
   fetch("https://fasi-backend.herokuapp.com/talents" + "/", {
@@ -84,6 +80,7 @@ const handleCreate = (newTalent) => {
   });
 };
 
+// const talentsWeb = talents.filter( (talent) => talent.tags.includes("web, mobile, software development") )
  
 
   return (
@@ -93,12 +90,13 @@ const handleCreate = (newTalent) => {
       <Switch>
         <Route exact path= "/" render={(rp) => <Home {...rp} talents = {talents} /> } />
 
-        <Route exact path="/display" render={(rp) => <Display {...rp} talents = {talents} selectTalent= {selectTalent} deleteTalent={deleteTalent} /> }/>
+        <Route exact path="/display" render={(rp) => <Display {...rp} talents = {talents}  selectTalent= {selectTalent} deleteTalent={deleteTalent} /> }/>
 
-        <Route exact path = {`/display/:id`} render={(rp) => <Show {...rp} talents = {talents}  deleteTalent={deleteTalent} />  } />
+        <Route exact path = "/display/:id" name="id" render={(rp) => <Show {...rp} talents = {talents}  />  } />
         
         <Route exact path="/edit" render={(rp) => <Form {...rp} label="update" talent={selectedTalent} handleSubmit = {handleUpdate} />} />
 
+        <Route exact path="/create" render={(rp) => <Form {...rp} label="create" talent={emptyTalent} handleSubmit={handleCreate} /> } /> 
       </Switch>
          
     </main> 

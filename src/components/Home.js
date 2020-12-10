@@ -67,7 +67,7 @@ return(
 
     <div>
         <img src={hired_text} />
-        <h2>Fill out the form <span class="green" ><u>here</u></span> and we’ll add you to our database.</h2>
+        <h2>Fill out the form <span class="green" ><Link to="/create"  ><u>here</u></Link></span> and we’ll add you to our database.</h2>
     </div>
 
     </Layout>
