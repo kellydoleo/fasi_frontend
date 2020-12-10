@@ -5,14 +5,14 @@ import {Link} from "react-router-dom"
 
 const Display = (props) => {
 
-    const {talents, id} = props
+    const {talents} = props
 
     const loaded = () => (
         <Layout>
         {talents.map((talent)=>(
           
             <div>
-             <Link to={`/display/:${id}`} ><img src = {`${talent.work_image_url}`}/></Link> 
+             <Link to="" ><img src = {`${talent.work_image_url}`}/></Link> 
               
               <Link  ><h1>{talent.name}</h1></Link>
               <h2>{talent.email}</h2>

@@ -9,7 +9,7 @@ import Form from "./components/Form.js"
 import { useParams } from "react-router"
 function App() {
 
-  const {id} = useParams()
+  
   const [talents, setTalent] = React.useState([])
 
 
@@ -49,7 +49,7 @@ const handleUpdate = (talent) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(talent)
-  }).then(()=> getTalent())
+  }).then((response)=> getTalent())
 }
  
 
@@ -72,6 +72,17 @@ const showTalent = (talent) => {
   }).then((response) => getTalent())
 }
 
+const handleCreate = (newTalent) => {
+  fetch("https://fasi-backend.herokuapp.com/talents" + "/", {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newTalent),
+  }).then(() => {
+    getTalent();
+  });
+};
 
  
 
@@ -82,10 +93,11 @@ const showTalent = (talent) => {
       <Switch>
         <Route exact path= "/" render={(rp) => <Home {...rp} talents = {talents} /> } />
 
-        <Route exact path="/display" render={(rp) => <Display {...rp} talents = {talents} id = {id} selectTalent= {selectTalent} deleteTalent={deleteTalent} /> }/>
+        <Route exact path="/display" render={(rp) => <Display {...rp} talents = {talents} selectTalent= {selectTalent} deleteTalent={deleteTalent} /> }/>
 
-        <Route exact path = {`/display/:${id}`} render={(rp) => <Show {...rp} talents = {talents} id = {id} deleteTalent={deleteTalent} />  } />
-        <Route exact path="/edit" render={(rp) => <Form {...rp} talents ={talents} handleSubmit = {handleUpdate} />} />
+        <Route exact path = {`/display/:id`} render={(rp) => <Show {...rp} talents = {talents}  deleteTalent={deleteTalent} />  } />
+        
+        <Route exact path="/edit" render={(rp) => <Form {...rp} label="update" talent={selectedTalent} handleSubmit = {handleUpdate} />} />
 
       </Switch>
          
