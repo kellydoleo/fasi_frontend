@@ -1,19 +1,30 @@
 import React from 'react';
 import Layout from "/Volumes/Seagate Portable Drive/GA_Work/projects/unit_4/FASI APP/fasi_frontend/src/components/Layout.js"
+import {Link} from "react-router-dom"
+
 
 const Display = (props) => {
 
-    const {talents} = props
+    const {talents, id} = props
 
     const loaded = () => (
         <Layout>
         {talents.map((talent)=>(
           
             <div>
-              <h1>{talent.name}</h1>
+             <Link to={`/display/:${id}`} ><img src = {`${talent.work_image_url}`}/></Link> 
+              
+              <Link  ><h1>{talent.name}</h1></Link>
               <h2>{talent.email}</h2>
               <p>{talent.description}</p>
-              <a href={``} ><img src = {`${talent.work_image_url}`}/></a>
+              <button onClick={()=>{
+                props.selectTalent(talent);
+                props.history.push("/edit")
+              }} >Edit</button>
+              <button onClick={()=> {
+                props.deleteTalent(talent)
+              }} >Delete</button>
+              
               
             </div>
           
