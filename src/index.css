@@ -11,3 +11,277 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.green-logo {
+  position: absolute;
+  width: 17%;
+  /* height: 113px; */
+  top: 52px;
+  left: 690px;
+}
+
+.beige-back {
+  background-color: #FFF8ED;
+    width: 95%;
+    height: 920px;
+}
+
+.hero-image {
+  position: absolute;
+    width: 640px;
+    /* height: 120%; */
+    top: 0%;
+    left: 0%;
+
+}
+
+.hero-image-text {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  top: 841px;
+  left: 1%;
+}
+
+
+#orange-bar {
+  background: #F8CE86;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+    width: 136px;
+    height: 470px;
+    left: 1784px;
+  
+}
+
+#green-bar {
+  background-color: #3AA683;
+  /* position: absolute; */
+  /* width: 116px; */
+  /* height: 353px; */
+  /* top: 57%; */
+  /* left: 94%; */
+  position: absolute;
+  width: 139px;
+  height: 450px;
+  top: 470px;
+  left: 1784px;
+  
+}
+
+#hero-text {
+  position: absolute;
+  width: 29%;
+  /* height: 275px; */
+  top: 575px;
+  left: 61%;
+}
+
+#ig-icon {
+  position: absolute;
+    width: 2%;
+    left: 96%;
+    top: 32%;
+}
+
+#twitter-icon {
+  position: absolute;
+  width: 2%;
+  left: 96%;
+  top: 42%;
+}
+
+#orange-box {
+  background-color: #F8CE86;
+  height: 1161px;
+}
+
+#green-arrow {
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    position: absolute;
+    width: 48px;
+    height: 391px;
+    left: 1833px;
+    top: 477px;
+}
+
+#our-services{
+position: absolute;
+width:774px;
+height: 133px;
+top: 947px;
+left: 517px;
+}
+
+#laptop {
+  width: 20%;
+  position: relative;
+  top: 168px;
+  left: 119px;
+
+}
+
+.web-button {
+  position: relative;
+  left: -202px;
+  top: 210px;
+}
+
+#designer-icon {
+  width: 23%;
+  position: relative;
+  left: 32px;
+  top: 179px;
+}
+
+.designer-button {
+  position: relative;
+  top: 210px;
+  left: -322px;
+}
+
+#pencil-icon {
+  width: 7%;
+  position: relative;
+  top: 175px;
+  left: 59px;
+}
+
+
+.pencil-button {
+  position: relative;
+  top: 210px;
+  left: -65px;
+}
+
+#diversity-icon {
+  width: 20%;
+  position: relative;
+  top: 251px;
+  left: 120px;
+}
+
+.diversity-button {
+  position: relative;
+  left: -254px;
+  top: 285px;
+}
+
+#photography-icon {
+  width: 9%;
+  position: relative;
+  top: 258px;
+  left: 82px;
+}
+
+.photography-button {
+  top: 288px;
+  position: relative;
+  left: -99px;
+}
+
+#social-icon {
+  width: 16%;
+  position: relative;
+  top: 250px;
+  left: 268px;
+}
+
+.social-button {
+  position: relative;
+  top: 282px;
+  left: 26px;
+}
+
+footer {
+  background-color: #3AA683;
+  width: 101%;
+  height: 489px;
+}
+
+.last-div > h2 {
+  text-align: center;
+}
+
+.last-div > img {
+  position: relative;
+    left: 580px;
+}
+
+.last-div {
+  background-color: #F8CE86;
+  height: 258px;
+}
+
+#footer-text {
+  width: 41%;
+    /* text-align: center; */
+    position: relative;
+    left: 360px;
+    top: 46px;
+}
+
+#orange-fasi-logo {
+  width: 15%;
+}
+
+.display-div {
+  height: 660px;
+  display: inline-block;
+  
+
+}
+
+#work-image {
+  width: 17%;
+    position: relative;
+    top: 200px;
+    left: 20px;
+}
+
+.display-div > a > h1 {
+  position: relative;
+    top: 200px;
+    left: 21px;
+}
+
+.display-div > h2 {
+  position: relative;
+    top: 169px;
+    width: 24px;
+    left: 18px;
+}
+
+.display-div > p {
+  overflow-wrap: break-word;
+    width: 17%;
+    position: relative;
+    top: 148px;
+    left: 18px;
+}
+
+.edit-button {
+  position: relative;
+    top: 130px;
+    left: 23px;
+}
+
+.delete-button {
+  position: relative;
+    top: 130px;
+    left: 32px;
+}
+
+.show-div > img {
+  width: 15%;
+}
+
+.show-wrapping-div {
+  height: 700px;
+}

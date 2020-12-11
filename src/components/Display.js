@@ -9,19 +9,20 @@ const Display = (props) => {
 
     const loaded = () => (
         <Layout>
+          <div className = "show-wrapping-div" >
         {talents.map((talent)=>(
           
-            <div>
-             <Link to={`/display/${talent.id}`}  ><img src = {`${talent.work_image_url}`}/></Link> 
+            <div className="display-div" >
+             <Link to={`/display/${talent.id}`}  ><img id="work-image" src = {`${talent.work_image_url}`}/></Link> 
               
               <Link to={`/display/${talent.id}`}  ><h1>{talent.name}</h1></Link>
               <h2>{talent.email}</h2>
               <p>{talent.description}</p>
-              <button onClick={()=>{
+              <button className="edit-button" onClick={()=>{
                 props.selectTalent(talent);
                 props.history.push("/edit")
               }} >Edit</button>
-              <button onClick={()=> {
+              <button className="delete-button" onClick={()=> {
                 props.deleteTalent(talent)
               }} >Delete</button>
               
@@ -29,6 +30,7 @@ const Display = (props) => {
             </div>
           
         ))}
+        </div>
         </Layout>
       );
 

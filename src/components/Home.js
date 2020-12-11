@@ -21,51 +21,51 @@ const Home = (props) => {
 
 return(
     <Layout>
-    <div>
+    <div className="beige-back" >
       
-      <img src={hero_image} />
-      <img src={hero_image_text} />
-      <img src={hero_text} />
+      <img className="hero-image" src={hero_image} />
+      <img className="hero-image-text" src={hero_image_text} />
+      <img id="hero-text" src={hero_text} />
       <div id="orange-bar" ></div>
-      <img src={ig_icon} />
-      <img src={twitter_icon} />
+      <img id="ig-icon" src={ig_icon} />
+      <img id="twitter-icon" src={twitter_icon} />
       <div id="green-bar" ></div>
-      <img src={arrow_green_bar} />
+      <img id="green-arrow" src={arrow_green_bar} />
     </div>
 
-    <div>
-    <img src={our_services} />
-    <img src={laptop_icon} />
+    <div id="orange-box" >
+    <img id="our-services" src={our_services} />
+    <img id="laptop" src={laptop_icon} />
     <Link to="/display" > 
-    <div class="button" >WEB, MOBILE, & SOFTWARE DEV</div>
+    <div class="button web-button" >WEB, MOBILE, & SOFTWARE DEV</div>
     </Link>
 
-    <img src= {designers_icon} />
+    <img id="designer-icon" src= {designers_icon} />
 
     <Link to="/display" >
-    <div class="button" >GRAPHIC DESIGN/ART DIRECTION</div>
+    <div class="button designer-button" >GRAPHIC DESIGN/ART DIRECTION</div>
     </Link>
 
-    <img src={pencil_icon} />
+    <img id="pencil-icon" src={pencil_icon} />
     <Link to= "/display" >
-    <div class="button" >WRITING</div>
+    <div class="button pencil-button" >WRITING</div>
     </Link>
 
-    <img src={diversity_icon} />
+    <img id="diversity-icon" src={diversity_icon} />
     <Link to= "/display" > 
-    <div class="button" >DIVERSITY, EQUITY & INCLUSION CONSULTATION</div>
+    <div class="button diversity-button" >DIVERSITY, EQUITY & INCLUSION CONSULTATION</div>
     </Link>
-    <img src={photography_icon} />
+    <img id="photography-icon" src={photography_icon} />
     <Link to="/display" >
-    <div class="button" >PHOTOGRAPHY</div>
+    <div class="button photography-button" >PHOTOGRAPHY</div>
     </Link>
-    <img src={social_media_icon} />
+    <img id="social-icon" src={social_media_icon} />
     <Link to="/display" >
-    <div class="button" >SOCIAL MEDIA</div>
+    <div class="button social-button" >SOCIAL MEDIA</div>
     </Link>
     </div>
 
-    <div>
+    <div className="last-div" >
         <img src={hired_text} />
         <h2>Fill out the form <span class="green" ><Link to="/create"  ><u>here</u></Link></span> and we’ll add you to our database.</h2>
     </div>

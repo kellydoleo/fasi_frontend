@@ -7,14 +7,16 @@ const {talents} = props
     return(
         
         <Layout>
+            <div className=""  >
             {talents.map((talent) => (
-                <>
+                <div className="show-div" >
             <img src = {`${talent.image_url}`}  />
             <h2>{talent.name}</h2>
             <p>{talent.description}</p>
             <button onClick={talent.work_url} >See my Work</button>
-            </> 
+            </div> 
             ))}
+            </div>
            
         </Layout>
             
