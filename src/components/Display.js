@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from "/Volumes/Seagate Portable Drive/GA_Work/projects/unit_4/FASI APP/fasi_frontend/src/components/Layout.js"
+import Layout from "../Layout.js"
 import {Link} from "react-router-dom"
 
 // import CardColumns from 'react-bootstrap/CardColumns'
