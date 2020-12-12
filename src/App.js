@@ -7,9 +7,13 @@ import Display from "./components/Display.js"
 import Show from "./components/Show.js"
 import Form from "./components/Form.js"
 import { useParams } from "react-router"
+import './index.css'
+
+
+
 function App() {
 
-  
+  const {id} = useParams()
   const [talents, setTalent] = React.useState([])
 
 
@@ -40,6 +44,8 @@ function App() {
   work_url: "",
   work_image_url: ""
  }
+
+
 
  //handleUpdate for when you want to update form
 const handleUpdate = (talent) => {

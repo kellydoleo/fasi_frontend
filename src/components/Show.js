@@ -1,21 +1,28 @@
 import React from "react"
 import Layout from "/Volumes/Seagate Portable Drive/GA_Work/projects/unit_4/FASI APP/fasi_frontend/src/components/Layout.js"
+import { useParams } from "react-router"
 
 const Show = (props) => {
 const {talents} = props
+const {id} = useParams()
 
+const talent = talents.filter(talent => {
+    if(talent.id == id) {
+        return talent
+    }
+})
     return(
         
         <Layout>
             <div className=""  >
-            {talents.map((talent) => (
+            
                 <div className="show-div" >
-            <img src = {`${talent.image_url}`}  />
-            <h2>{talent.name}</h2>
-            <p>{talent.description}</p>
-            <button onClick={talent.work_url} >See my Work</button>
+            <img src = {talent[0].image_url}  />
+            <h2>{talent[0].name}</h2>
+            <p>{talent[0].description}</p>
+            <button onClick={talent[0].work_url} >See my Work</button>
             </div> 
-            ))}
+            
             </div>
            
         </Layout>

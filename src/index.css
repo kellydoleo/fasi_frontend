@@ -97,6 +97,7 @@ code {
 #orange-box {
   background-color: #F8CE86;
   height: 1161px;
+  
 }
 
 #green-arrow {
@@ -122,7 +123,7 @@ left: 517px;
 #laptop {
   width: 20%;
   position: relative;
-  top: 168px;
+  top: 234px;
   left: 119px;
 
 }
@@ -130,7 +131,7 @@ left: 517px;
 .web-button {
   position: relative;
   left: -202px;
-  top: 210px;
+  top: 414px;
 }
 
 #designer-icon {
@@ -142,21 +143,21 @@ left: 517px;
 
 .designer-button {
   position: relative;
-  top: 210px;
+  top: 409px;
   left: -322px;
 }
 
 #pencil-icon {
   width: 7%;
   position: relative;
-  top: 175px;
+  top: 235px;
   left: 59px;
 }
 
 
 .pencil-button {
   position: relative;
-  top: 210px;
+  top: 408px;
   left: -65px;
 }
 
@@ -170,20 +171,20 @@ left: 517px;
 .diversity-button {
   position: relative;
   left: -254px;
-  top: 285px;
+  top: 409px;
 }
 
 #photography-icon {
-  width: 9%;
+  width: 8%;
   position: relative;
-  top: 258px;
+  top: 244px;
   left: 82px;
 }
 
 .photography-button {
-  top: 288px;
+  top: 413px;
   position: relative;
-  left: -99px;
+  left: -85px;
 }
 
 #social-icon {
@@ -195,14 +196,14 @@ left: 517px;
 
 .social-button {
   position: relative;
-  top: 282px;
+  top: 417px;
   left: 26px;
 }
 
 footer {
   background-color: #3AA683;
-  width: 101%;
-  height: 489px;
+  
+  height: 250px;
 }
 
 .last-div > h2 {
@@ -279,9 +280,52 @@ footer {
 }
 
 .show-div > img {
-  width: 15%;
+  width: 21%;
 }
 
-.show-wrapping-div {
-  height: 700px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 160px;
+  
+}
+
+
+.column > p {
+  width: 50%;
+  margin-bottom: 0px;
+}
+
+.column > a > img {
+  width: 65%;
+  
+  /* text-align: center;
+  object-fit: cover; */
+}
+
+.column > a > h1 {
+  /* width: 30%; */
+}
+
+.column {
+  width: 2%;
+  /* flex: 5%; */
+  /* padding-right: 10px; */
+ /* overflow-x: hidden; */
+  /* padding: 0 4px; */
+}
+
+.spacer {
+  margin-top: 15%;
+}
+
+.show-div {
+  margin-top: 10%;
+  margin-left: 39%;
+  margin-bottom: 10%;
+
+}
+
+.show-div > p {
+  width: 20%;
 }

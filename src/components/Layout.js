@@ -5,12 +5,14 @@ import orange_fasi_logo from "../images/orange_fasi_logo.png"
 import footer_text from "../images/footer_text.png"
 import {Link} from "react-router-dom"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Layout = (props) => {
 
 return(
     <html>
         <head>
-            
+  
         </head>
         <body>
             <header>

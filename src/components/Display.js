@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from "/Volumes/Seagate Portable Drive/GA_Work/projects/unit_4/FASI APP/fasi_frontend/src/components/Layout.js"
 import {Link} from "react-router-dom"
 
+// import CardColumns from 'react-bootstrap/CardColumns'
+
 
 const Display = (props) => {
 
@@ -9,25 +11,29 @@ const Display = (props) => {
 
     const loaded = () => (
         <Layout>
-          <div className = "show-wrapping-div" >
+
+          <div className="spacer" ></div>
+          <div className = "row" >
         {talents.map((talent)=>(
           
-            <div className="display-div" >
-             <Link to={`/display/${talent.id}`}  ><img id="work-image" src = {`${talent.work_image_url}`}/></Link> 
+            <div className="column" style={{width: "2%"}} >
               
-              <Link to={`/display/${talent.id}`}  ><h1>{talent.name}</h1></Link>
+           <Link to={`/display/${talent.id}`} key={talent.id}  ><img  src = {`${talent.work_image_url}`}/></Link>
+              
+              <Link to={`/display/${talent.id}`} key={talent.id}  ><h1>{talent.name}</h1></Link>
               <h2>{talent.email}</h2>
               <p>{talent.description}</p>
-              <button className="edit-button" onClick={()=>{
+              <button variant="primary"  onClick={()=>{
                 props.selectTalent(talent);
                 props.history.push("/edit")
               }} >Edit</button>
-              <button className="delete-button" onClick={()=> {
+              <button variant="primary"  onClick={()=> {
                 props.deleteTalent(talent)
               }} >Delete</button>
               
+             
               
-            </div>
+             </div>
           
         ))}
         </div>
