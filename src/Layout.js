@@ -1,8 +1,8 @@
 import React from "react"
 // import {require} from "browserify"
-import fasi_logo_green from "../images/fasi_logo_green.png"
-import orange_fasi_logo from "../images/orange_fasi_logo.png"
-import footer_text from "../images/footer_text.png"
+import fasi_logo_green from "./images/fasi_logo_green.png"
+import orange_fasi_logo from "./images/orange_fasi_logo.png"
+import footer_text from "./images/footer_text.png"
 import {Link} from "react-router-dom"
 
 
