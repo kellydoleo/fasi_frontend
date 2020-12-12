@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
     "browserify": "^17.0.0",
+    "heroku": "^7.47.5",
     "milligram": "^1.4.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
